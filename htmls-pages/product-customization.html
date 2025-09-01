@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>طراحی محصول - فروشگاه چاپ سفارشی</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class=" text-white">
+
+  
+  <nav class="bg-black shadow-lg header-js">
+  </nav>
+
+  
+  <section class="max-w-7xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold text-yellow-400 mb-8 text-center">سفارش‌سازی محصول</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      
+      
+      <div class="bg-gray-900 p-4 rounded-lg shadow-md">
+        <img src="product1.jpg" alt="محصول انتخابی" class="w-full h-96 object-contain rounded" />
+      </div>
+
+      
+      <form class="bg-gray-900 p-6 rounded-lg shadow-md space-y-4">
+        
+        <div>
+          <label class="block text-yellow-400 mb-1">رنگ محصول:</label>
+          <select class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2">
+            <option>سفید</option>
+            <option>مشکی</option>
+            <option>قرمز</option>
+            <option>آبی</option>
+          </select>
+        </div>
+
+        
+        <div>
+          <label class="block text-yellow-400 mb-1">سایز:</label>
+          <select class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2">
+            <option>کوچک</option>
+            <option>متوسط</option>
+            <option>بزرگ</option>
+            <option>XL</option>
+          </select>
+        </div>
+
+        
+        <div>
+          <label class="block text-yellow-400 mb-1">تعداد:</label>
+          <input type="number" min="1" value="1" class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2"/>
+        </div>
+
+        
+        <div>
+          <label class="block text-yellow-400 mb-1">جنس محصول:</label>
+          <select class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2">
+            <option>کتان</option>
+            <option>پلی‌استر</option>
+            <option>سرامیک</option>
+            <option>PVC</option>
+          </select>
+        </div>
+
+        
+        <div>
+          <label class="block text-yellow-400 mb-1">نوع چاپ:</label>
+          <div class="space-y-2">
+            <label class="flex items-center">
+              <input type="radio" name="print" class="ml-2" checked />
+              چاپ دیجیتال
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="print" class="ml-2" />
+              چاپ سیلک
+            </label>
+            <label class="flex items-center">
+              <input type="radio" name="print" class="ml-2" />
+              چاپ حرارتی
+            </label>
+          </div>
+        </div>
+
+        
+        <div>
+          <label class="block text-yellow-400 mb-1">طرح یا لوگو:</label>
+          <input type="file" class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2"/>
+        </div>
+
+        
+        <div>
+          <label class="block text-yellow-400 mb-1">توضیحات تکمیلی:</label>
+          <textarea rows="4" class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2" placeholder="اگر نکته خاصی دارید بنویسید..."></textarea>
+        </div>
+
+        
+        <button type="submit" class="w-full bg-yellow-400 text-black py-3 rounded hover:bg-yellow-300 transition">
+          افزودن به سبد خرید
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-10">
+    <p>© ۲۰۲۵ تمامی حقوق محفوظ است - فروشگاه چاپ سفارشی</p>
+  </footer>
+
+  <script type="module" src="../scripts/header.js"></script>
+
+</body>
+</html>

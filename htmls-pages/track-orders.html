@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>پیگیری سفارشات</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function toggleDetails(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class=" text-white">
+
+  <nav class="bg-black shadow-lg header-js">
+  </nav>
+
+  <!-- بخش پیگیری -->
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-yellow-400 mb-6 text-center">پیگیری سفارشات</h1>
+
+    <!-- فیلد وارد کردن شماره سفارش -->
+    <div class="bg-gray-900 p-6 rounded-lg shadow mb-8">
+      <label for="order-number" class="block mb-2 text-sm font-semibold">شماره سفارش خود را وارد کنید:</label>
+      <input type="text" id="order-number" placeholder="مثال: 123456" class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+    </div>
+
+    <!-- سفارش‌ها -->
+    <div class="bg-gray-900 p-6 rounded-lg shadow space-y-4">
+      <h2 class="text-xl font-semibold text-yellow-300 mb-4">سفارش‌های پیشین شما</h2>
+
+      <!-- کارت سفارش ۱ -->
+      <div class="border border-gray-700 rounded">
+        <button onclick="toggleDetails('order1')" class="w-full text-right px-4 py-3 hover:bg-gray-800 transition flex justify-between items-center">
+          <span>سفارش #123456 - ۱۴۰۴/۰۳/۲۲</span>
+          <span class="text-yellow-400">مشاهده جزئیات</span>
+        </button>
+        <div id="order1" class="hidden px-4 pb-4 space-y-3">
+          <p><strong>وضعیت:</strong> در حال آماده‌سازی</p>
+          <p><strong>آدرس:</strong> کرمانشاه، بلوار آزادی</p>
+          <p><strong>مبلغ کل:</strong> ۲۸۰,۰۰۰ تومان</p>
+
+          <!-- محصولات -->
+          <div class="space-y-2">
+            <div class="flex items-center bg-gray-800 p-3 rounded">
+              <img src="https://via.placeholder.com/60" class="w-14 h-14 rounded object-cover ml-4" alt="محصول"/>
+              <div>
+                <p>تیشرت مشکی XL - ۲ عدد</p>
+                <p class="text-sm text-gray-400">۱۵۰,۰۰۰ تومان</p>
+              </div>
+            </div>
+            <div class="flex items-center bg-gray-800 p-3 rounded">
+              <img src="https://via.placeholder.com/60" class="w-14 h-14 rounded object-cover ml-4" alt="محصول"/>
+              <div>
+                <p>ماگ سفید - ۱ عدد</p>
+                <p class="text-sm text-gray-400">۹۰,۰۰۰ تومان</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- کارت سفارش ۲ -->
+      <div class="border border-gray-700 rounded">
+        <button onclick="toggleDetails('order2')" class="w-full text-right px-4 py-3 hover:bg-gray-800 transition flex justify-between items-center">
+          <span>سفارش #789012 - ۱۴۰۴/۰۲/۱۸</span>
+          <span class="text-yellow-400">مشاهده جزئیات</span>
+        </button>
+        <div id="order2" class="hidden px-4 pb-4 space-y-3">
+          <p><strong>وضعیت:</strong> ارسال شده</p>
+          <p><strong>آدرس:</strong> تهران، سعادت‌آباد</p>
+          <p><strong>مبلغ کل:</strong> ۴۵۰,۰۰۰ تومان</p>
+
+          <!-- محصول -->
+          <div class="flex items-center bg-gray-800 p-3 rounded">
+            <img src="https://via.placeholder.com/60" class="w-14 h-14 rounded object-cover ml-4" alt="محصول"/>
+            <div>
+              <p>هودی سفید L - ۱ عدد</p>
+              <p class="text-sm text-gray-400">۴۵۰,۰۰۰ تومان</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-10">
+    <p>© ۲۰۲۵ تمامی حقوق محفوظ است - فروشگاه چاپ سفارشی</p>
+  </footer>
+
+  <script type="module" src="../scripts/header.js"></script>
+</body>
+</html>

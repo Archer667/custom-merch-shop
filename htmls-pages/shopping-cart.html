@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>سبد خرید - فروشگاه چاپ سفارشی</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class=" text-white">
+
+  <!-- هدر مشابه صفحات دیگر -->
+  <nav class="bg-black shadow-lg header-js">
+  </nav>
+
+  <!-- بخش سبد خرید -->
+<section class="max-w-7xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold text-yellow-400 mb-8 text-center">سبد خرید شما</h1>
+  
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      
+      <!-- باکس محصولات -->
+      <div class="lg:col-span-2">
+        <!-- محصولات داخل یک باکس -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-bold text-yellow-400 mb-4">محصولات انتخاب شده</h2>
+        
+            <!-- هدر جدول -->
+            <div class="grid grid-cols-5 gap-4 text-yellow-300 border-b border-gray-600 pb-2 mb-2 text-sm font-semibold">
+            <span>تصویر</span>
+            <span>محصول</span>
+            <span>تعداد</span>
+            <span>قیمت</span>
+            <span>عملیات</span>
+            </div>
+        
+            <!-- ردیف محصول ۱ -->
+            <div class="grid grid-cols-5 gap-4 items-center text-white py-3 border-b border-gray-800">
+            <img src="https://via.placeholder.com/60x60" alt="محصول ۱" class="w-14 h-14 object-cover rounded" />
+            <span>تیشرت مشکی XL</span>
+            <span>۲</span>
+            <span>۱۵۰,۰۰۰ تومان</span>
+            <button class="text-red-400 hover:text-red-600 text-sm">حذف</button>
+            </div>
+        
+            <!-- ردیف محصول ۲ -->
+            <div class="grid grid-cols-5 gap-4 items-center text-white py-3 border-b border-gray-800">
+            <img src="https://via.placeholder.com/60x60" alt="محصول ۲" class="w-14 h-14 object-cover rounded" />
+            <span>ماگ چاپی سفید</span>
+            <span>۱</span>
+            <span>۹۰,۰۰۰ تومان</span>
+            <button class="text-red-400 hover:text-red-600 text-sm">حذف</button>
+            </div>
+        
+            <!-- ادامه محصولات... -->
+        
+        </div>
+  
+      </div>
+  
+      <!-- جمع‌بندی و کد تخفیف -->
+      <div class="space-y-6 bg-gray-900 p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold text-yellow-400 mb-4">جزئیات سفارش</h2>
+  
+        <div class="flex justify-between text-sm">
+          <span>جمع کل:</span>
+          <span>۳۹۰,۰۰۰ تومان</span>
+        </div>
+        <div class="flex justify-between text-sm">
+          <span>هزینه ارسال:</span>
+          <span>۴۰,۰۰۰ تومان</span>
+        </div>
+        <hr class="border-gray-600" />
+        <div class="flex justify-between text-lg font-bold">
+          <span>مبلغ نهایی:</span>
+          <span class="text-green-400">۴۳۰,۰۰۰ تومان</span>
+        </div>
+  
+        <!-- کد تخفیف -->
+        <div>
+          <label class="block text-yellow-400 mb-1">کد تخفیف:</label>
+          <div class="flex">
+            <input type="text" class="flex-1 bg-black text-white border border-yellow-400 rounded-l px-3 py-2" placeholder="کد را وارد کنید" />
+            <button class="bg-yellow-400 text-black px-4 rounded-r hover:bg-yellow-300 transition">اعمال</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- فرم اطلاعات ارسال -->
+    <div class="mt-10 bg-gray-900 p-6 rounded-lg shadow-md max-w-4xl mx-auto space-y-4">
+      <h2 class="text-xl font-bold text-yellow-400 mb-4">تکمیل اطلاعات ارسال</h2>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-yellow-400 mb-1">نام و نام خانوادگی:</label>
+          <input type="text" class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2" placeholder="مثلاً علی رضایی"/>
+        </div>
+        <div>
+          <label class="block text-yellow-400 mb-1">شماره تماس:</label>
+          <input type="tel" class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2" placeholder="مثلاً 09123456789"/>
+        </div>
+        <div>
+          <label class="block text-yellow-400 mb-1">ایمیل:</label>
+          <input type="email" class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2" placeholder="you@example.com"/>
+        </div>
+        <div>
+          <label class="block text-yellow-400 mb-1">استان و شهر:</label>
+          <input type="text" class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2" placeholder="مثلاً تهران - تهران"/>
+        </div>
+      </div>
+  
+      <div>
+        <label class="block text-yellow-400 mb-1">آدرس دقیق:</label>
+        <textarea rows="3" class="w-full bg-black text-white border border-yellow-400 rounded px-3 py-2" placeholder="خیابان، پلاک، طبقه و ..."></textarea>
+      </div>
+  
+      <button class="w-full bg-yellow-400 text-black py-3 rounded hover:bg-yellow-300 transition font-bold">
+        ثبت سفارش و ادامه به پرداخت
+      </button>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-10">
+    <p>© ۲۰۲۵ تمامی حقوق محفوظ است - فروشگاه چاپ سفارشی</p>
+  </footer>
+
+  <script type="module" src="../scripts/header.js"></script>
+</body>
+</html>
