@@ -11,8 +11,8 @@ Website Features
 
 Tech Stack
 
-Frontend: HTML, CSS, JavaScript (add framework if used e.g. React, Vue)
-Backend: Node.js / Express (or Django, depending on your choice)
+Frontend: HTML, CSS, JavaScript (add framework if used e.g. React, Vue) <br>
+Backend: Node.js / Express (or Django, depending on your choice) <br>
 Database: MongoDB / PostgreSQL / MySQL
 
 some pictures 
