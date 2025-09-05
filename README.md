@@ -3,11 +3,11 @@ A modern e-commerce web application where users can browse, customize, and purch
 
 Website Features
 
-1-Custom Products – Users can design or choose custom merchandise (t-shirts, mugs, business carts, ...)
-2-Shopping Cart – Add, update, and remove products from the cart
-3-User Accounts – Sign up, log in, and manage orders
-4-Responsive Design – Works on desktop and mobile
-5-Admin Dashboard – Manage products, orders, and customers
+1-Custom Products – Users can design or choose custom merchandise (t-shirts, mugs, business carts, ...)<br>
+2-Shopping Cart – Add, update, and remove products from the cart <br>
+3-User Accounts – Sign up, log in, and manage orders <br>
+4-Responsive Design – Works on desktop and mobile <br>
+5-Admin Dashboard – Manage products, orders, and customers <br>
 
 Tech Stack
 
